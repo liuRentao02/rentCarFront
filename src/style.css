@@ -1,0 +1,76 @@
+:root {
+    --bg-color: #f0f2f5;
+    --bg-user-color: #409EFF;
+    --bg-card-color: #f0f2f5;
+    --bg-icon-color: #515151;
+
+    --admin-header-back: #003d80;
+
+    --primary-color: #0056b3;
+    --primary-dark: #003d80;
+    --primary-light: #e8f1fc;
+    --accent-color: #ffc107;
+    --accent-hover: #e0a800;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --text-muted: #999999;
+    --bg-light: #ffffff;
+    --white: #ffffff;
+    --border-color: #e0e0e0;
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s ease;
+    --radius: 12px;
+    --radius-sm: 6px;
+    --admin-header-text: #ffffff;
+}
+
+html.dark {
+    --bg-color: #18191a;
+    --bg-card-color: #2c2c2c;
+    --bg-icon-color: #ffffff;
+    --bg-user-color: #1c1b1b;
+
+    --admin-header-back: #2a3a4e;
+
+    /* 新增暗夜模式变量 */
+    --primary-color: #3b9eff;           /* 更亮的蓝色，适合暗背景 */
+    --primary-dark: #1e6bc7;
+    --primary-light: #2a3a4e;
+    --accent-color: #ffb74d;            /* 暖色强调 */
+    --accent-hover: #ffa726;
+    --text-dark: #e4e6eb;                /* 主要文字变亮 */
+    --text-light: #b0b3b8;               /* 次要文字 */
+    --text-muted: #6c6f78;
+    --bg-light: #242526;                  /* 浅背景（在暗模式下变深） */
+    --white: #1e1f22;                     /* 原本的白色背景变深 */
+    --border-color: #3e4042;               /* 边框加深 */
+    --error-color: #f56c6c;                /* 错误色柔和化 */
+    --success-color: #6fcf97;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BEM命名规范布局类 === */
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.el-message,
+.el-notification {
+    z-index: 10000 !important;
+}
